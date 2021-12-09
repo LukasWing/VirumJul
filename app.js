@@ -100,12 +100,45 @@ function kirsHead(centerX, centerY){
         rect(390,368,20,12)
 
     pop()
+function carlfont(centerX, centerY){ 
+    push();
+    
+fill((Date.now()/5 % 114), 15, 252);
+rect(centerX+10,centerY,80,80);
+pop();
+
+push();
+fill((Date.now()/5 % 255), 10, 10);
+
+rect(centerX,centerY,100,10);
+
+
+
+var x = 0;
+while(x < 10){
+ if (x<3){
+ rect(centerX+45,centerY+10,10,70);
+ }
+ x=x+1;
 }
+
+
+
+    pop();
+}
+
+
 /**
  * Should draw a pretty but neutral background the tree
  */
 function drawBackground(){
     background(200,200,200);
+
+    for(var i = 0; i <1500; i++){
+
+            drawConfetti(5,5,400,400);
+     }
+
 }
 
 function setup(){
@@ -121,6 +154,7 @@ function setup(){
 
     kirsHead();
 
+    BaMedKag(400,400);
 }
 
 /**
@@ -136,6 +170,9 @@ function testLocator(){
     kirsHead(400, 500) // should a Dannebrog in the middle
     kirsHead(50,50) // should draw Dannebrog in top left corner
     kirsHead(750, 50) //should draw Dannebrog in top right corner
+    carlfont(400, 500) // should a Dannebrog in the middle
+    carlfont(50,50) // should draw Dannebrog in top left corner
+    carlfont(750, 50) //should draw Dannebrog in top right corner
 }
 
 /**
@@ -144,7 +181,8 @@ function testLocator(){
 function testSize(){
     rect(100, 300, 100, 100);
     kirsHead(150, 350); //replace with you function
+    BaMedKag(150, 350); //replace with you function
 }
 
 
-console.log("JS finished.")
+
