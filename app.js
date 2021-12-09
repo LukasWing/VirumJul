@@ -54,8 +54,83 @@ var drawDannebrog = function(centerX, centerY){
  * Should contain at least one loop and one if statement
  * It should be named according to your git name
  */
-function lukasWing(centerX, centerY){ 
+function saracommit (centerX,centerY){
 
+    push()
+
+    stroke(242, 179, 8); // kugle 1 
+    fill(176,17,17);
+    ellipse(xMid-170,yMid+140 ,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-170,yMid+140,5,5);
+    fill(0,0,0);
+    text("s", xMid-170,yMid+140,);
+
+    stroke(242, 179, 8); // kugle 2 
+    fill(176,17,17);
+    ellipse(xMid,yMid+150 ,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid,yMid+150,);
+
+    stroke(242, 179, 8); // kugle 3 
+    fill(176,17,17);
+    ellipse(xMid+45,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+45,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid+45,yMid+150,);
+
+    stroke(242, 179, 8); // kugle 4 
+    fill(176,17,17);
+    ellipse(xMid-45, yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-45,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid-45,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 5
+    fill(176,17,17);
+    ellipse(xMid+90,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+90,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid+90,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 6
+    fill(176,17,17);
+    ellipse(xMid+135,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+135,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid+135,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 7
+    fill(176,17,17);
+    ellipse(xMid-90,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-90,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid-90,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 8
+    fill(176,17,17);
+    ellipse(xMid-135,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-135,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid-135,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 9 
+    fill(176,17,17);
+    ellipse(xMid+170,yMid+140 ,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+170,yMid+140,5,5);
+    fill(0,0,0);
+    text("s", xMid+170,yMid+140,);
+
+    pop()
 }
 /**
  * Should draw a pretty but neutral background the tree
@@ -74,6 +149,8 @@ function setup(){
     //testLocator();
     //testSize();
     // call you method here below
+
+    saracommit();
 }
 
 /**
