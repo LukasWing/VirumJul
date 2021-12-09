@@ -54,8 +54,52 @@ var drawDannebrog = function(centerX, centerY){
  * Should contain at least one loop and one if statement
  * It should be named according to your git name
  */
-function lukasWing(centerX, centerY){ 
+function kirsHead(centerX, centerY){ 
+    push()
+        stroke(255, 234, 0)
+        fill(200,00,00)
+       ellipse(400,400,50,50)
+       fill(255, 234, 0)
+       //triangles right
+       triangle(400,380,405,376,410,380)
+       triangle(400,385,405,380,410,385)
+       triangle(400,390,405,385,410,390)
+       triangle(400,395,405,390,410,395)
+       triangle(400,400,405,395,410,400)
+       triangle(400,405,405,400,410,405)
+       triangle(400,410,405,405,410,410)
+       triangle(400,415,405,410,410,415)
+       triangle(400,420,405,415,410,420)
+       triangle(400,424,405,420,410,422)
 
+       //triangles left
+       triangle(400,380,395,376,390,380)
+       triangle(400,385,395,380,390,385)
+       triangle(400,390,395,385,390,390)
+       triangle(400,395,395,390,390,395)
+       triangle(400,400,395,395,390,400)
+       triangle(400,405,395,400,390,405)
+       triangle(400,410,395,405,390,410)
+       triangle(400,415,395,410,390,415)
+       triangle(400,420,395,415,390,420)
+       triangle(400,424,395,420,390,422)
+
+        //circles right
+        ellipse(420,390,5)
+        ellipse(420,400,5)
+        ellipse(420,410,5)
+
+        //circles left
+        ellipse(380,390,5)
+        ellipse(380,400,5)
+        ellipse(380,410,5)
+
+        //top
+        stroke(0,0,0)
+        fill(181, 170, 43)
+        rect(390,368,20,12)
+
+    pop()
 }
 /**
  * Should draw a pretty but neutral background the tree
@@ -68,21 +112,30 @@ function setup(){
     createCanvas(w,h);
     drawBackground();
     drawTree(xMid,yMid+50);
-    //drawDannebrog(xMid+100, yMid-100);
+    drawDannebrog(xMid+100, yMid-100);
     drawGodJul(xMid, yMid+50);
     
-    //testLocator();
-    //testSize();
+    testLocator();
+    testSize();
     // call you method here below
+
+    kirsHead();
+
 }
 
 /**
  * Replace dannebrog with you function to test location
  */
+
+
+
+
+
+
 function testLocator(){
-    drawDannebrog(400, 500) // should a Dannebrog in the middle
-    drawDannebrog(50,50) // should draw Dannebrog in top left corner
-    drawDannebrog(750, 50) //should draw Dannebrog in top right corner
+    kirsHead(400, 500) // should a Dannebrog in the middle
+    kirsHead(50,50) // should draw Dannebrog in top left corner
+    kirsHead(750, 50) //should draw Dannebrog in top right corner
 }
 
 /**
@@ -90,8 +143,8 @@ function testLocator(){
  */
 function testSize(){
     rect(100, 300, 100, 100);
-    drawDannebrog(150, 350); //replace with you function
+    kirsHead(150, 350); //replace with you function
 }
 
-    
+
 console.log("JS finished.")
