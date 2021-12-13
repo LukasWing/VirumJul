@@ -119,6 +119,8 @@ function jensFont(centerX, centerY){
         triangle(x-30,y-26,x+30,y-26,x+26,y-90);
         fill(255, 255, 255);
         ellipse(x+26,y-90,25*scale,25*scale);
+
+        pop()
 }
 
 
@@ -128,16 +130,17 @@ function Sophabbr(centerX, centerY){
 function fredOpen(centerX, centerY){ 
     push()
         var r=random(0, 255);
-        var g=random(0, 255);
+        var g=random(0, 150);
         var b=random(0, 255);
-        fill(0, 255, 0);
+        fill(0, 225, 0);
         ellipse(centerX+25, centerY-10, 30, 25);
         ellipse(centerX+45, centerY-10, 30, 25);
-        fill(r, b, g);
+        fill(r, g, b);
         rect(centerX, centerY, 70, 60);
         rect(centerX-5, centerY, 80, 20);
-        fill(0, 255, 0);
+        fill(0, 225, 0);
         rect(centerX+25, centerY, 20, 60);
+        rect(centerX+25, centerY, 20, 20);
         
 
     pop()
@@ -200,7 +203,8 @@ function setup(){
     //testLocator();
     //testSize();
     // call you method here below
-    drawDannebrog(xMid+100, yMid-100);
+    fredOpen(xMid+100, yMid-100);
+    fredOpen(400, 400);
 
 
     
@@ -222,8 +226,11 @@ function testLocator(){
  */
 function testSize(){
     rect(100, 300, 100, 100);
-    albeBody(150, 350); //replace with you function
+    fredOpen(120, 330); 
+    //replace with you function
 }
+
+
 
 
     
