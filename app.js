@@ -141,8 +141,6 @@ function fredOpen(centerX, centerY){
         fill(0, 225, 0);
         rect(centerX+25, centerY, 20, 60);
         rect(centerX+25, centerY, 20, 20);
-        
-
     pop()
 }
 
@@ -211,11 +209,12 @@ function setup(){
     testSize();
     //call you method here below
     
+    
     //testLocator();
     //testSize();
     // call you method here below
-    fredOpen(xMid+100, yMid-100);
-    fredOpen(400, 400);
+    fredOpen(xMid-90, yMid+345);
+    
 
 
     
