@@ -148,6 +148,17 @@ function fredOpen(centerX, centerY){
 
 function carlfont(centerX, centerY){ 
     push();
+       
+        fill((Date.now()/5 % 114), 15, 252);
+        rect(centerX+10,centerY,80,80);
+    pop();
+    
+    push();
+        fill((Date.now()/5 % 255), 10, 10);
+    
+        rect(centerX,centerY,100,10);
+
+    pop();
 }
 function albeBody(centerX, centerY){ 
     push()
