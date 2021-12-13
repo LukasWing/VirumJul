@@ -4,7 +4,7 @@ var h = 1000;
 xMid = w/2;
 yMid = h/2;
 // add you function to the array
-var allFunctions = [drawDannebrog, nieldiv, saracommit];
+var allFunctions = [drawDannebrog];
 
 var drawTree = function(centerX, centerY){
     push();
@@ -132,7 +132,7 @@ push();
     fill(0,0,0);
     text("s", xMid+170,yMid+140,);
 
-    
+
 
 pop();
 
