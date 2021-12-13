@@ -4,6 +4,7 @@ var h = 1000;
 xMid = w/2;
 yMid = h/2;
 // add you function to the array
+var allFunctions = [drawDannebrog];
 
 var drawTree = function(centerX, centerY){
     push();
@@ -108,6 +109,84 @@ function kirsHead(centerX, centerY){
         rect(centerX-10,centerY-32,20,12)
 
     pop()
+function saracommit (centerX,centerY){
+
+push();
+    stroke(242, 179, 8); // kugle 1 
+    fill(176,17,17);
+    ellipse(xMid-170,yMid+140 ,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-170,yMid+140,5,5);
+    fill(0,0,0);
+    text("s", xMid-170,yMid+140,);
+
+    stroke(242, 179, 8); // kugle 2 
+    fill(176,17,17);
+    ellipse(xMid,yMid+150 ,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid,yMid+150,);
+
+    stroke(242, 179, 8); // kugle 3 
+    fill(176,17,17);
+    ellipse(xMid+45,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+45,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid+45,yMid+150,);
+
+    stroke(242, 179, 8); // kugle 4 
+    fill(176,17,17);
+    ellipse(xMid-45, yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-45,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid-45,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 5
+    fill(176,17,17);
+    ellipse(xMid+90,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+90,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid+90,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 6
+    fill(176,17,17);
+    ellipse(xMid+135,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+135,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid+135,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 7
+    fill(176,17,17);
+    ellipse(xMid-90,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-90,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid-90,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 8
+    fill(176,17,17);
+    ellipse(xMid-135,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-135,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid-135,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 9 
+    fill(176,17,17);
+    ellipse(xMid+170,yMid+140 ,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+170,yMid+140,5,5);
+    fill(0,0,0);
+    text("s", xMid+170,yMid+140,);
+
+
+
+pop();
 
 function nieldiv(centerX, centerY){ 
     push()
@@ -198,6 +277,17 @@ function fredOpen(centerX, centerY){
 
 function carlfont(centerX, centerY){ 
     push();
+       
+        fill((Date.now()/5 % 114), 15, 252);
+        rect(centerX+10,centerY,80,80);
+    pop();
+    
+    push();
+        fill((Date.now()/5 % 255), 10, 10);
+    
+        rect(centerX,centerY,100,10);
+
+    pop();
 }
 function albeBody(centerX, centerY){ 
     push()
@@ -262,6 +352,7 @@ function setup(){
     testSize();
 
 
+    saracommit();
     drawDannebrog(xMid+100, yMid-100);
 
 
@@ -271,6 +362,10 @@ function setup(){
  * Replace dannebrog with you function to test location
  */
 
+    nieldiv(400, 500) // should a Dannebrog in the middle
+    nieldiv(50,50) // should draw Dannebrog in top left corner
+    nieldiv(750, 50) //should draw Dannebrog in top right corner
+    saracommit(); 
 
 
 
@@ -289,3 +384,5 @@ function testSize(){
 
 }
 
+    albeBody(150, 350); //replace with you function
+}
