@@ -121,7 +121,18 @@ function jensFont(centerX, centerY){
         ellipse(x+26,y-90,25*scale,25*scale);
 }
 
+//
+function isabhead(centerX, centerY){ 
+    push()
+    fill(174, 0, 255);
+    rect(centerX - 11, centerY - 60, 20, 30);
+    fill(255, 201, 0);
+    ellipse(centerX, centerY, 75, 75);// Drawjulekugle 
+fill(255,255,255)
+    ellipse(centerX, centerY, 25, 25)
 
+    pop()
+}
 function Sophabbr(centerX, centerY){ 
 }
 
@@ -175,6 +186,8 @@ function albeBody(centerX, centerY){
 }
 
 
+
+
 /**
  * Should draw a pretty but neutral background the tree
  */
@@ -202,8 +215,7 @@ function setup(){
     // call you method here below
     drawDannebrog(xMid+100, yMid-100);
 
-
-    
+  isabhead(xMid-150, yMid+170);
 }
 
 /**
