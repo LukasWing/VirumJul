@@ -4,7 +4,6 @@ var h = 1000;
 xMid = w/2;
 yMid = h/2;
 // add you function to the array
-var allFunctions = [drawDannebrog, nieldiv];
 
 var drawTree = function(centerX, centerY){
     push();
@@ -65,43 +64,48 @@ function kirsHead(centerX, centerY){
        ellipse(centerX,centerY,50,50)
        fill(255, 234, 0)
        //triangles right
-       triangle(centerX,380,405,376,410,380)
-       triangle(centerX,385,405,380,410,385)
-       triangle(400,390,405,385,410,390)
-       triangle(400,395,405,390,410,395)
-       triangle(400,400,405,395,410,400)
-       triangle(400,405,405,400,410,405)
-       triangle(400,410,405,405,410,410)
-       triangle(400,415,405,410,410,415)
-       triangle(400,420,405,415,410,420)
-       triangle(400,424,405,420,410,422)
+       triangle(centerX,centerY-20,centerX+5,centerY-24,centerX+10,centerY-20)
+       triangle(centerX,centerY-15,centerX+5,centerY-20,centerX+10,centerY-15)
+       triangle(centerX,centerY-10,centerX+5,centerY-15,centerX+10,centerY-10)
+       triangle(centerX,centerY-5,centerX+5,centerY-10,centerX+10,centerY-5)
+       triangle(centerX,centerY,centerX+5,centerY-5,centerX+10,centerY)
+       triangle(centerX,centerY+5,centerX+5,centerY,centerX+10,centerY+5)
+       triangle(centerX,centerY+10,centerX+5,centerY+5,centerX+10,centerY+10)
+       triangle(centerX,centerY+15,centerX+5,centerY+10,centerX+10,centerY+15)
+       triangle(centerX,centerY+20,centerX+5,centerY+15,centerX+10,centerY+20)
+       triangle(centerX,centerY+24,centerX+5,centerY+20,centerX+10,centerY+22)
 
        //triangles left
-       triangle(400,380,395,376,390,380)
-       triangle(400,385,395,380,390,385)
-       triangle(400,390,395,385,390,390)
-       triangle(400,395,395,390,390,395)
-       triangle(400,400,395,395,390,400)
-       triangle(400,405,395,400,390,405)
-       triangle(400,410,395,405,390,410)
-       triangle(400,415,395,410,390,415)
-       triangle(400,420,395,415,390,420)
-       triangle(400,424,395,420,390,422)
+       triangle(centerX,centerY-20,centerX-5,centerY-24,centerX-10,centerY-20)
+       triangle(centerX,centerY-15,centerX-5,centerY-20,centerX-10,centerY-15)
+       triangle(centerX,centerY-10,centerX-5,centerY-15,centerX-10,centerY-10)
+       triangle(centerX,centerY-5,centerX-5,centerY-10,centerX-10,centerY-5)
+       triangle(centerX,centerY,centerX-5,centerY-5,centerX-10,centerY)
+       triangle(centerX,centerY+5,centerX-5,centerY,centerX-10,centerY+5)
+       triangle(centerX,centerY+10,centerX-5,centerY+5,centerX-10,centerY+10)
+       triangle(centerX,centerY+15,centerX-5,centerY+10,centerX-10,centerY+15)
+       triangle(centerX,centerY+20,centerX-5,centerY+15,centerX-10,centerY+20)
+       triangle(centerX,centerY+24,centerX-5,centerY+20,centerX-10,centerY+22)
 
         //circles right
-        ellipse(420,390,5)
-        ellipse(420,400,5)
-        ellipse(420,410,5)
+        ellipse(centerX+20,centerY-10,5)
+        ellipse(centerX+20,centerY,5)
+        ellipse(centerX+20,centerY+10,5)
 
         //circles left
-        ellipse(380,390,5)
-        ellipse(380,400,5)
-        ellipse(380,410,5)
+        ellipse(centerX-20,centerY-10,5)
+        ellipse(centerX-20,centerY,5)
+        ellipse(centerX-20,centerY+10,5)
+
+        //circle
+        stroke(0,0,0)
+        noFill()
+        ellipse(centerX,centerY-35,14)
 
         //top
         stroke(0,0,0)
         fill(181, 170, 43)
-        rect(390,368,20,12)
+        rect(centerX-10,centerY-32,20,12)
 
     pop()
 
@@ -134,7 +138,7 @@ function nieldiv(centerX, centerY){
         }
     }
 }
- ab667b8c9885ed628f22a1ee11f52e7af99b46f1
+
 function jensFont(centerX, centerY){ 
     push()
         var scale = 1;
@@ -192,7 +196,6 @@ function fredOpen(centerX, centerY){
     pop()
 }
 
-ab667b8c9885ed628f22a1ee11f52e7af99b46f1
 function carlfont(centerX, centerY){ 
     push();
 }
@@ -251,18 +254,16 @@ function setup(){
     //testSize();
     // call you method here below
 
-    kirsHead(400,400);
 
-    BaMedKag(400,400);
+    kirsHead(260,780);
+
 
     testLocator();
     testSize();
-    albeBody();
+
 
     drawDannebrog(xMid+100, yMid-100);
 
-
- ab667b8c9885ed628f22a1ee11f52e7af99b46f1
 
 }
 
@@ -277,34 +278,7 @@ function setup(){
 
 function testLocator(){
 
-    kirsHead(400, 500) // should a Dannebrog in the middle
-    kirsHead(50,50) // should draw Dannebrog in top left corner
-    kirsHead(750, 50) //should draw Dannebrog in top right corner
-
-    jensFont(400, 500) // should a Dannebrog in the middle
-    jensFont(50,50) // should draw Dannebrog in top left corner
-    jensFont(750, 50) //should draw Dannebrog in top right corner
-    Sophabbr(400, 500) // should a Dannebrog in the middle
-    Sophabbr(50,50) // should draw Dannebrog in top left corner
-    Sophabbr(750, 50) //should draw Dannebrog in top right corner
-    fredOpen(400, 500) // should a Dannebrog in the middle
-    fredOpen(50,50) // should draw Dannebrog in top left corner
-    fredOpen(750, 50) //should draw Dannebrog in top right corner
-
-
-    carlfont(400, 500) // should a Dannebrog in the middle
-    carlfont(50,50) // should draw Dannebrog in top left corner
-    carlfont(750, 50) //should draw Dannebrog in top right corner
-
-
-
-    albeBody(400, 500) // should a Dannebrog in the middle
-    albeBody(50,50) // should draw Dannebrog in top left corner
-    albeBody(750, 50) //should draw Dannebrog in top right corner
-
-    nieldiv(400, 500) // should a Dannebrog in the middle
-    nieldiv(50,50) // should draw Dannebrog in top left corner
-    nieldiv(750, 50) //should draw Dannebrog in top right corner
+  
 }
 
 /**
@@ -312,8 +286,6 @@ function testLocator(){
  */
 function testSize(){
     rect(100, 300, 100, 100);
-    kirsHead(150, 350); //replace with you function
-    BaMedKag(150, 350); //replace with you function
-    albeBody(150, 350); //replace with you function
+
 }
 
