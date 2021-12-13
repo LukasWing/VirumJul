@@ -236,7 +236,6 @@ function testLocator(){
  */
 function testSize(){
     rect(100, 300, 100, 100);
-    fredOpen(115, 330); 
     //replace with you function
 }
 
