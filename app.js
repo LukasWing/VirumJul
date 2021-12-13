@@ -178,13 +178,25 @@ function albeBody(centerX, centerY){
 /**
  * Should draw a pretty but neutral background the tree
  */
+
+
+ function drawConfetti(sizeX,sizeY) {
+
+    var r =random(5,400);
+    var g =random(5,400);
+    var b =random(5,400);
+    fill(r,g,b);
+    ellipse(random(0,800),random(0,1000),sizeX,sizeY)
+
+ }
+
 function drawBackground(){
     background(200,200,200);
 
     for(var i = 0; i <1500; i++){
 
-            //drawConfetti(5,5,400,400);
-            // hvis du undrer dig over hvorfor den ikke virker, kunne det havde noget at gøre med at selve funktionen mangler.
+            drawConfetti(5,5,400,400);
+            
      }
 
 }
