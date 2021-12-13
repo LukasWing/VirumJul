@@ -184,6 +184,7 @@ function drawBackground(){
     for(var i = 0; i <1500; i++){
 
             //drawConfetti(5,5,400,400);
+            // hvis du undrer dig over hvorfor den ikke virker, kunne det havde noget at gøre med at selve funktionen mangler.
      }
 
 }
