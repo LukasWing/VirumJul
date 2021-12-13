@@ -145,31 +145,32 @@ function fredOpen(centerX, centerY){
 
 function carlfont(centerX, centerY){ 
     push();
+    pop();
 }
 function albeBody(centerX, centerY){ 
-    push()
+    push();
+    console.log ("jeg er kaldt")
+
     fill(255,0,0);
-    ellipse(350,400,80,80);
-    
+    ellipse(centerX+200,centerY+80,80,80); //julekule
+   
     fill(246,225,10);
-    ellipse(330,390,30,30);
-    ellipse(350,400,20,20);
+    ellipse(centerX+210,centerY+90,30,30); //refleksion 1
+    ellipse(centerX+220,centerY+80,20,20); //refleksion 2
 
     fill(1,86,225);
-    ellipse(450,600,80,80);
+    ellipse(centerX+300,centerY+250,80,80); //julekule
 
     fill(246,225,10);
-    ellipse(430,590,30,30);
-    ellipse(450,600,20,20);
+    ellipse(centerX+310,centerY+260,30,30); //refleksion 3
+    ellipse(centerX+320,centerY+250,20,20); //refleksion 4
 
     fill(225, 1,205);
-    ellipse(350,750,80,80);
+    ellipse(centerX+160,centerY+350,80,80); //julekule
 
     fill(246,225,10);
-    ellipse(330,740,30,30);
-    ellipse(350,750,20,20);   
-
-    pop()
+    ellipse(centerX+170,centerY+360,30,30); //refleksion 5
+    ellipse(centerX+180,centerY+350,20,20); //refleksion 6 
 
     pop();
 }
@@ -201,7 +202,7 @@ function setup(){
     //testSize();
     // call you method here below
     drawDannebrog(xMid+100, yMid-100);
-
+    albeBody(150,350);
 
     
 }
