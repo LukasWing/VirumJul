@@ -4,7 +4,6 @@ var h = 1000;
 xMid = w/2;
 yMid = h/2;
 // add you function to the array
-var allFunctions = [drawDannebrog, nieldiv];
 
 var drawTree = function(centerX, centerY){
     push();
@@ -57,6 +56,138 @@ var drawDannebrog = function(centerX, centerY){
  * Should contain at least one loop and one if statement
  * It should be named according to your git name
  */
+
+function kirsHead(centerX, centerY){ 
+    push()
+        stroke(255, 234, 0)
+        fill(200,00,00)
+       ellipse(centerX,centerY,50,50)
+       fill(255, 234, 0)
+       //triangles right
+       triangle(centerX,centerY-20,centerX+5,centerY-24,centerX+10,centerY-20)
+       triangle(centerX,centerY-15,centerX+5,centerY-20,centerX+10,centerY-15)
+       triangle(centerX,centerY-10,centerX+5,centerY-15,centerX+10,centerY-10)
+       triangle(centerX,centerY-5,centerX+5,centerY-10,centerX+10,centerY-5)
+       triangle(centerX,centerY,centerX+5,centerY-5,centerX+10,centerY)
+       triangle(centerX,centerY+5,centerX+5,centerY,centerX+10,centerY+5)
+       triangle(centerX,centerY+10,centerX+5,centerY+5,centerX+10,centerY+10)
+       triangle(centerX,centerY+15,centerX+5,centerY+10,centerX+10,centerY+15)
+       triangle(centerX,centerY+20,centerX+5,centerY+15,centerX+10,centerY+20)
+       triangle(centerX,centerY+24,centerX+5,centerY+20,centerX+10,centerY+22)
+
+       //triangles left
+       triangle(centerX,centerY-20,centerX-5,centerY-24,centerX-10,centerY-20)
+       triangle(centerX,centerY-15,centerX-5,centerY-20,centerX-10,centerY-15)
+       triangle(centerX,centerY-10,centerX-5,centerY-15,centerX-10,centerY-10)
+       triangle(centerX,centerY-5,centerX-5,centerY-10,centerX-10,centerY-5)
+       triangle(centerX,centerY,centerX-5,centerY-5,centerX-10,centerY)
+       triangle(centerX,centerY+5,centerX-5,centerY,centerX-10,centerY+5)
+       triangle(centerX,centerY+10,centerX-5,centerY+5,centerX-10,centerY+10)
+       triangle(centerX,centerY+15,centerX-5,centerY+10,centerX-10,centerY+15)
+       triangle(centerX,centerY+20,centerX-5,centerY+15,centerX-10,centerY+20)
+       triangle(centerX,centerY+24,centerX-5,centerY+20,centerX-10,centerY+22)
+
+        //circles right
+        ellipse(centerX+20,centerY-10,5)
+        ellipse(centerX+20,centerY,5)
+        ellipse(centerX+20,centerY+10,5)
+
+        //circles left
+        ellipse(centerX-20,centerY-10,5)
+        ellipse(centerX-20,centerY,5)
+        ellipse(centerX-20,centerY+10,5)
+
+        //circle
+        stroke(0,0,0)
+        noFill()
+        ellipse(centerX,centerY-35,14)
+
+        //top
+        stroke(0,0,0)
+        fill(181, 170, 43)
+        rect(centerX-10,centerY-32,20,12)
+
+    pop()
+function saracommit (centerX,centerY){
+
+push();
+    stroke(242, 179, 8); // kugle 1 
+    fill(176,17,17);
+    ellipse(xMid-170,yMid+140 ,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-170,yMid+140,5,5);
+    fill(0,0,0);
+    text("s", xMid-170,yMid+140,);
+
+    stroke(242, 179, 8); // kugle 2 
+    fill(176,17,17);
+    ellipse(xMid,yMid+150 ,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid,yMid+150,);
+
+    stroke(242, 179, 8); // kugle 3 
+    fill(176,17,17);
+    ellipse(xMid+45,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+45,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid+45,yMid+150,);
+
+    stroke(242, 179, 8); // kugle 4 
+    fill(176,17,17);
+    ellipse(xMid-45, yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-45,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid-45,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 5
+    fill(176,17,17);
+    ellipse(xMid+90,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+90,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid+90,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 6
+    fill(176,17,17);
+    ellipse(xMid+135,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+135,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid+135,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 7
+    fill(176,17,17);
+    ellipse(xMid-90,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-90,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid-90,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 8
+    fill(176,17,17);
+    ellipse(xMid-135,yMid+150,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid-135,yMid+150,5,5);
+    fill(0,0,0);
+    text("s", xMid-135,yMid+150,);
+
+    stroke(242, 179, 8); //kugle 9 
+    fill(176,17,17);
+    ellipse(xMid+170,yMid+140 ,45,45);
+    fill(255, 255, 255);
+    ellipse(xMid+170,yMid+140,5,5);
+    fill(0,0,0);
+    text("s", xMid+170,yMid+140,);
+
+
+
+pop();
+}
+
 function nieldiv(centerX, centerY){ 
     push()
         fill(252, 248, 5);
@@ -85,6 +216,7 @@ function nieldiv(centerX, centerY){
             x=x+1;
         }
     }
+}
 
 function jensFont(centerX, centerY){ 
     push()
@@ -156,31 +288,42 @@ function fredOpen(centerX, centerY){
 
 function carlfont(centerX, centerY){ 
     push();
+       
+        fill((Date.now()/5 % 114), 15, 252);
+        rect(centerX+10,centerY,80,80);
+    pop();
+    
+    push();
+        fill((Date.now()/5 % 255), 10, 10);
+    
+        rect(centerX,centerY,100,10);
+
+    pop();
 }
 function albeBody(centerX, centerY){ 
-    push()
+    push();
+    console.log ("jeg er kaldt")
+
     fill(255,0,0);
-    ellipse(350,400,80,80);
-    
+    ellipse(centerX+200,centerY+80,80,80); //julekule
+   
     fill(246,225,10);
-    ellipse(330,390,30,30);
-    ellipse(350,400,20,20);
+    ellipse(centerX+210,centerY+90,30,30); //refleksion 1
+    ellipse(centerX+220,centerY+80,20,20); //refleksion 2
 
     fill(1,86,225);
-    ellipse(450,600,80,80);
+    ellipse(centerX+300,centerY+250,80,80); //julekule
 
     fill(246,225,10);
-    ellipse(430,590,30,30);
-    ellipse(450,600,20,20);
+    ellipse(centerX+310,centerY+260,30,30); //refleksion 3
+    ellipse(centerX+320,centerY+250,20,20); //refleksion 4
 
     fill(225, 1,205);
-    ellipse(350,750,80,80);
+    ellipse(centerX+160,centerY+350,80,80); //julekule
 
     fill(246,225,10);
-    ellipse(330,740,30,30);
-    ellipse(350,750,20,20);   
-
-    pop()
+    ellipse(centerX+170,centerY+360,30,30); //refleksion 5
+    ellipse(centerX+180,centerY+350,20,20); //refleksion 6 
 
     pop();
 }
@@ -213,20 +356,34 @@ function setup(){
     //testLocator();
     //testSize();
     // call you method here below
-    drawDannebrog(xMid+100, yMid-100);
 
   isabhead(xMid-150, yMid+170);
+
+    kirsHead(260,780);
+
+
+    testLocator();
+    testSize();
+
+
+
+    drawDannebrog(xMid+100, yMid-100);
+    albeBody(150,350);
+
 }
 
 /**
  * Replace dannebrog with you function to test location
  */
+
+
+
+
+
+
 function testLocator(){
 
-    nieldiv(400, 500) // should a Dannebrog in the middle
-    nieldiv(50,50) // should draw Dannebrog in top left corner
-    nieldiv(750, 50) //should draw Dannebrog in top right corner
-
+  
 }
 
 /**
@@ -234,9 +391,9 @@ function testLocator(){
  */
 function testSize(){
     rect(100, 300, 100, 100);
-    albeBody(150, 350); //replace with you function
-}
 
 
     
 console.log("JS finished.")
+    albeBody(150, 350); //replace with you function
+}
