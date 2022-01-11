@@ -86,6 +86,26 @@ function nieldiv(centerX, centerY){
         }
     }
 
+    var BaMedKag=function(centerX,centerY){
+    push()
+    fill("white");
+    ellipse(centerX,centerY-15,15,15)
+    ellipse(centerX,centerY,20,20)
+    ellipse(centerX,centerY+20,25,25)
+    fill("orange")
+    ellipse(centerX,centerY-13,5,5)
+    fill("black")
+    ellipse(centerX-3,centerY-17,5,5)
+    ellipse(centerX+3,centerY-17,5,5)
+    line(centerX+10,centerY,centerX+15,centerY-15)
+    line(centerX-10,centerY,centerX-15,centerY-15)
+    fill("black")
+    ellipse(centerX,centerY,5,5)
+    ellipse(centerX,centerY+20,5,5)
+pop()
+    }
+
+
 function jensFont(centerX, centerY){ 
     push()
         var scale = 1;
@@ -192,14 +212,29 @@ function albeBody(centerX, centerY){
 
 
  function drawConfetti(sizeX,sizeY) {
-
+    push();
     var r =random(5,400);
     var g =random(5,400);
     var b =random(5,400);
     fill(r,g,b);
     ellipse(random(0,800),random(0,1000),sizeX,sizeY)
-
+    pop();
  }
+
+
+ function drawGolden(sizeX,sizeY) {
+    push();
+    fill(255,204,0);
+    ellipse(random(0,800),random(900,1000),sizeX,sizeY)
+    pop();
+ }
+
+function drawCarpet(xPos,yPos){
+    push();
+    fill(200,1,1);
+    rect(xPos,yPos,800,100)
+    pop();
+}
 
 function drawBackground(){
     background(200,200,200);
@@ -207,9 +242,17 @@ function drawBackground(){
     for(var i = 0; i <1500; i++){
 
             drawConfetti(5,5,400,400);
-            
-     }
+        
 
+     }
+     drawCarpet(0,900);
+
+for(var i = 0; i <400; i++){
+
+            drawGolden(5,5,400,400);
+        
+
+     }
 }
 
 function setup(){
@@ -224,7 +267,7 @@ function setup(){
     //testLocator();
     //testSize();
     // call you method here below
-    drawDannebrog(xMid+100, yMid-100);
+    BaMedKag(xMid+50, yMid-220);
 
 
     
